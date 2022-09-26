@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <HeaderComponent/>
-    <MainComponent/>
+    <MainComponent />
     <FooterComponent/>
   </div>
 </template>
@@ -11,14 +11,22 @@ import HeaderComponent from './components/HeaderComponent.vue'
 import MainComponent from './components/MainComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
 
-
+import {cardsDCComics} from '@/data'
 
 export default {
   name: 'App',
+    data(){
+      return{
+        cardsDCComics
+      };
+    },
+    
   components: {
     HeaderComponent,
     MainComponent,
-    FooterComponent
+    FooterComponent,
+    
+
 }
 }
 </script>

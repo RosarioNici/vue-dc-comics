@@ -55,11 +55,25 @@
                 <li>VIDEO</li>
                 <li>NEWS</li>
                 <li>Shop DC</li> 
-                
             </ul>
-            
-           
-         </div>      
+         </div> 
+         <div>
+            <h1>DC COMICS</h1>
+            <ul>
+                <li>CHARACTERS</li>
+                <li>COMICS</li>
+                <li>MOVIE</li>
+                <li>TV</li>
+                <li>GAMES</li>
+                <li>VIDEO</li>
+                <li>NEWS</li>
+                <li>Shop DC</li> 
+                <li>Shop DC Collectionables</li>
+                <li>VIDEO</li>
+                <li>NEWS</li>
+                <li>Shop DC</li> 
+            </ul>
+         </div>       
         </menu>
     </div>
     <div class="container-singup"></div>

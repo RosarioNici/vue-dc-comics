@@ -1,13 +1,29 @@
 <template>
-    <main> <section class="container-main">
-<div> <h1>--> content Goes Here >-- </h1> </div>
-  </section></main>
+    <main id="MainComponent"> 
+        <section class="container-main">
+            <div class="card" > 
+            {{card.series}}
+            <CardComponent :data="card" v-for="card in cards" :key="card.thumb"/>
+            </div>
+        </section>
+    </main>
  
 </template>
 
 <script>
+   import CardComponent from '@/components/CardComponent.vue';
+
 export default {
-name: 'MainComponent'
+name: 'MainComponent',
+
+props:{
+    cards:Array,
+},
+components:{
+    CardComponent,
+   
+},
+
 }
 </script>
 
@@ -15,7 +31,7 @@ name: 'MainComponent'
 $zero-auto: 0 auto;
     main{
         width: 100%;
-        height: 30%;
+        height: 300px;
         color: white;
         background-color: black;
         margin: $zero-auto;
