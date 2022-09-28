@@ -94,7 +94,6 @@ $zero-auto: 0 auto;
     justify-content: space-around;
     align-items: center;
     margin: $zero-auto;
-    padding: 15px;
     color: white;
     width: $container-standard;
 }
@@ -110,7 +109,7 @@ $zero-auto: 0 auto;
 }
 .img-action{
     width: 50px;
-    margin-right:5px ;
+    margin-left: 5px;
 }
 menu{
     display: flex;

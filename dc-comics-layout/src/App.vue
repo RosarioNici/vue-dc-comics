@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <HeaderComponent/>
-    <MainComponent />
+    <MainComponent :data="cardsDCComics"/>
     <FooterComponent/>
   </div>
 </template>

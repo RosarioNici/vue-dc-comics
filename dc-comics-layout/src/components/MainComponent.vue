@@ -2,8 +2,7 @@
     <main id="MainComponent"> 
         <section class="container-main">
             <div class="card" > 
-            {{card.series}}
-            <CardComponent :data="card" v-for="card in cards" :key="card.thumb"/>
+            <CardComponent class="item" :data="card" v-for="card in data" :key="card.thumb"/>
             </div>
         </section>
     </main>
@@ -17,7 +16,7 @@ export default {
 name: 'MainComponent',
 
 props:{
-    cards:Array,
+    data:Array,
 },
 components:{
     CardComponent,
@@ -27,11 +26,10 @@ components:{
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 $zero-auto: 0 auto;
     main{
         width: 100%;
-        height: 300px;
         color: white;
         background-color: black;
         margin: $zero-auto;
@@ -40,5 +38,14 @@ $zero-auto: 0 auto;
         margin: $zero-auto;
         max-width: 1200px;
     }
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .item{
+        width: calc(100% / 4);
+       
+    }
+
 
 </style>
